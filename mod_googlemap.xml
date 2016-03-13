@@ -22,8 +22,8 @@
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-				<field name="w_input" type="input" default="600px" label="Широта" />
-				<field name="l_input" type="input" default="500px" label="Долгота" />
+				<field name="w_input" type="input" default="55.75396" label="Широта" />
+				<field name="l_input" type="input" default="37.620393" label="Долгота" />
 				<field name="zoom" type="input" default="10" label="Zoom" />
 				<field name="ww" type="input" default="600px" label="Ширина" />
 				<field name="hh" type="input" default="500px" label="Высота" />

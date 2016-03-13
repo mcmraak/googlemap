@@ -42,11 +42,14 @@ function initialize() {
         if(!empty($icon)){
             echo "icon: '$icon',";
         }
+        if(!empty($hint)){
+            echo "title: '$hint',";
+        }
       ?>
-      title: '<?php echo $hint; ?>',
       clickable: true
   });
   
+  <?php if(!empty($desc)): ?>
   marker.info = new google.maps.InfoWindow({
                        content: "<?php echo $desc; ?>"
                       });
@@ -55,6 +58,7 @@ function initialize() {
                         });
                         
   marker.info.open(map,marker);
+  <?php endif; ?>
 
   var usRoadMapType = new google.maps.StyledMapType(ColorTuning);
   map.mapTypes.set('usroadatlas', usRoadMapType);
