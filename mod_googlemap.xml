@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.0"
+	client="site"
+	method="upgrade">
+  <name>Google Map</name>
+  <author>mcmraak</author>
+  <creationDate>04.06.2015</creationDate>
+  <copyright>mcmraak @ 2015 - Free Joomla Module</copyright>
+  <license>Free</license>
+  <authorEmail>mcmraak@gmail.com</authorEmail>
+  <authorUrl>www.mraak.ru</authorUrl>
+  <version>1.0</version>
+  <description>Google - Карта</description>
+	<files>
+		<filename module="mod_Googlemap">mod_googlemap.php</filename>
+	    <filename>index.html</filename>
+		<filename>mod_googlemap.xml</filename>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="w_input" type="input" default="600px" label="Широта" />
+				<field name="l_input" type="input" default="500px" label="Долгота" />
+				<field name="zoom" type="input" default="10" label="Zoom" />
+				<field name="ww" type="input" default="600px" label="Ширина" />
+				<field name="hh" type="input" default="500px" label="Высота" />
+				<field name="hint" type="input" default="" label="Имя метки" />
+				<field name="desc" type="input" default="" label="Текст метки" />
+                                <field name="icon" class="" type="media" default=""
+					label="Изображение маркера"
+					description="Загрузить изображение маркера" />
+                                <field name="colorjson" type="textarea" default="" label="Цветовая схема" description="Цветовая схема (JSON-Массив)" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
