@@ -13,9 +13,10 @@ $desc = $params->get('desc');
 $cj = $params->get('colorjson');
 $icon = $params->get('icon');
 $mpu = $params->get('marker_popup');
+$apikey = $params->get('apikey');
 
 ?>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&key=<?=$apikey?>"></script>
 <script type="text/javascript">
 
 var myArea = new google.maps.LatLng(<?php echo $w; ?>, <?php echo $l; ?>);
