@@ -49,4 +49,7 @@
                     </fieldset>
 		</fields>
 	</config>
+        <updateservers>
+		<server type="extension" priority="1" name="Google map for Joomla">https://raw.githubusercontent.com/mcmraak/googlemap/master/update.xml</server>
+	</updateservers>
 </extension>

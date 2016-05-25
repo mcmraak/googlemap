@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+	<update>
+		<name>Google Map</name>
+		<description>
+			<![CDATA[
+				Latest version of Google Map plugin.
+			]]>
+		</description>
+		<version>1.2</version>
+		<infourl title="Google Map plugin for Joomla 3.x/2.5.x">
+			<![CDATA[http://mraak.ru]]>
+		</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip"><![CDATA[https://github.com/mcmraak/googlemap/raw/master/mod_googlemap.zip]]></downloadurl>
+		</downloads>
+		<targetplatform name="joomla" version=".*" />
+		<element>googlemap</element>
+		<type>module</type>
+		<folder>system</folder>
+		<client>0</client>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer>Aleksandr Ablizin</maintainer>
+		<maintainerurl><![CDATA[http://mraak.ru]]></maintainerurl>
+	</update>
+</updates>
+
