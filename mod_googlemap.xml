@@ -4,14 +4,14 @@
 	version="3.0"
 	client="site"
 	method="upgrade">
-  <name>Google Map</name>
+  <name>googlemap</name>
   <author>mcmraak</author>
   <creationDate>04.06.2015</creationDate>
   <copyright>mcmraak @ 2015 - Free Joomla Module</copyright>
   <license>Free</license>
   <authorEmail>mcmraak@gmail.com</authorEmail>
   <authorUrl>www.mraak.ru</authorUrl>
-  <version>1.1</version>
+  <version>1.0.1</version>
   <description>Google - Карта</description>
 	<files>
 		<filename module="mod_Googlemap">mod_googlemap.php</filename>
@@ -50,6 +50,6 @@
 		</fields>
 	</config>
         <updateservers>
-		<server type="extension" priority="1" name="Google map for Joomla">https://raw.githubusercontent.com/mcmraak/googlemap/master/update.xml</server>
+		<server type="extension" priority="1" name="Google map for Joomla">https://raw.githubusercontent.com/mcmraak/googlemap/master/mod_googlemap.xml</server>
 	</updateservers>
 </extension>
