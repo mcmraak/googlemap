@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.1" encoding="utf-8"?>
 <extension
 	type="module"
 	version="3.0"
@@ -27,11 +27,21 @@
 				<field name="zoom" type="input" default="10" label="Zoom" />
 				<field name="ww" type="input" default="600px" label="Ширина" />
 				<field name="hh" type="input" default="500px" label="Высота" />
-				<field name="hint" type="input" default="" label="Имя метки" />
-				<field name="desc" type="input" default="" label="Текст метки" />
+				<field name="hint" type="input" default="Москва" label="Имя метки" />
+				<field name="desc" type="input" default="Столица России" label="Текст метки" />
                                 <field name="icon" class="" type="media" default=""
 					label="Изображение маркера"
 					description="Загрузить изображение маркера" />
+                                <field
+					name="marker_popup"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					label="Автопоказ текста метки"
+					description="Автопоказ текста метки при загрузке карты"
+					default="0">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
                                 <field name="colorjson" type="textarea" default="" label="Цветовая схема" description="Цветовая схема (JSON-Массив)" />
 			</fieldset>
 		</fields>

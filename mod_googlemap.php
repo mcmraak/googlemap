@@ -12,6 +12,7 @@ $hint = $params->get('hint');
 $desc = $params->get('desc');
 $cj = $params->get('colorjson');
 $icon = $params->get('icon');
+$mpu = $params->get('marker_popup');
 
 ?>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
@@ -21,8 +22,11 @@ var myArea = new google.maps.LatLng(<?php echo $w; ?>, <?php echo $l; ?>);
 
 function initialize() {
 
-  var ColorTuning = <?php echo $cj; ?>;
-    
+<?php
+    if(!empty($cj)){
+        echo "var ColorTuning = $cj;";
+    }
+ ?>
 
   var mapOptions = {
     //scrollwheel: false,
@@ -42,27 +46,32 @@ function initialize() {
         if(!empty($icon)){
             echo "icon: '$icon',";
         }
-        if(!empty($hint)){
-            echo "title: '$hint',";
-        }
       ?>
+      title: '<?php echo $hint; ?>',
       clickable: true
   });
   
-  <?php if(!empty($desc)): ?>
   marker.info = new google.maps.InfoWindow({
                        content: "<?php echo $desc; ?>"
                       });
   google.maps.event.addListener(marker, 'click', function() {   
                             this.info.open(map,this);//(map, this);  
                         });
-                        
-  marker.info.open(map,marker);
-  <?php endif; ?>
+       
+<?php
+    
+    if($mpu){
+        echo "marker.info.open(map,marker);";
+    }
 
-  var usRoadMapType = new google.maps.StyledMapType(ColorTuning);
-  map.mapTypes.set('usroadatlas', usRoadMapType);
-  map.setMapTypeId('usroadatlas');
+    if(!empty($cj)){
+        ?>
+          var usRoadMapType = new google.maps.StyledMapType(ColorTuning);
+          map.mapTypes.set('usroadatlas', usRoadMapType);
+          map.setMapTypeId('usroadatlas');  
+      <?php
+    }
+ ?>
   
 }
 
