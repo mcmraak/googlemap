@@ -7,11 +7,11 @@
 		<type>module</type>
 		<version>1.0.2</version>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/mcmraak/googlemap/raw/master/mod_googlemap_102.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/mcmraak/googlemap/raw/master/mod_googlemap.zip</downloadurl>
 		</downloads>
 		<maintainer>Joomla</maintainer>
 		<maintainerurl>http://mraak.ru</maintainerurl>
-		<targetplatform name="joomla" version="3.0"/>
+		<targetplatform name="joomla" version="3"/>
 		<client>site</client>
 	</update>
 </updates>
