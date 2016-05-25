@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <updates>
 	<update>
-		<name>googlemap</name>
-		<description>mod_googlemap v1.0.2</description>
+		<name>Google maps for Joomla</name>
+		<description>Google maps for Joomla v1.0.3</description>
 		<element>mod_googlemap</element>
 		<type>module</type>
-		<version>1.0.2</version>
+		<version>1.0.3</version>
 		<downloads>
 			<downloadurl type="full" format="zip">https://github.com/mcmraak/googlemap/raw/master/mod_googlemap.zip</downloadurl>
 		</downloads>

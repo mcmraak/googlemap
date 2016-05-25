@@ -4,14 +4,14 @@
 	version="3"
 	client="site"
 	method="upgrade">
-  <name>googlemap</name>
-  <author>mcmraak</author>
-  <creationDate>04.06.2015</creationDate>
-  <copyright>mcmraak @ 2015 - Free Joomla Module</copyright>
+  <name>Google maps for Joomla</name>
+  <author>Aleksandr Ablizin (mcmraak@gmail.com)</author>
+  <creationDate>25.05.2016</creationDate>
+  <copyright>mcmraak @ 2016 - Free Joomla Module</copyright>
   <license>Free</license>
   <authorEmail>mcmraak@gmail.com</authorEmail>
   <authorUrl>www.mraak.ru</authorUrl>
-  <version>1.0.2</version>
+  <version>1.0.3</version>
   <description>Google - Карта</description>
 	<files>
 		<filename module="mod_Googlemap">mod_googlemap.php</filename>
